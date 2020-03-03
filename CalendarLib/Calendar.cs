@@ -1,12 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CalendarLib
 {
+	public enum MonthsInYear
+	{
+		January = 1,
+		February,
+		March,
+		April,
+		May,
+		June,
+		July,
+		August,
+		September,
+		October,
+		November,
+		December
+	}
+
 	public class Calendar
 	{
 		public int Day { get; }
@@ -153,6 +166,17 @@ namespace CalendarLib
 			}
 		}
 
+		/// <summary>
+		/// Returns name of current month
+		/// </summary>
+		public string MonthName
+		{
+			get
+			{
+				return ((MonthsInYear)Month).ToString();
+			}
+		}
+
 		#region Methods
 
 		/// <summary>
@@ -184,12 +208,35 @@ namespace CalendarLib
 		/// <summary>
 		/// Returns list of days of current date
 		/// </summary>
-		public List<int> GetMonthArray()
+		public List<int> GetListOfDaysInMonth()
 		{
-			List<int> month = new List<int>();
-			int daysOfWeek = DaysOfWeek;
+			List<int> list = new List<int>();
+			Calendar firstDayInMonth = new Calendar(1, Month, Year);
+			int daysOfWeek = firstDayInMonth.DaysOfWeek;
+			int daysInMonth = firstDayInMonth.DaysInMonth;
+			for (int i = 0; i < daysOfWeek; i++)
+				list.Add(0);
+			for (int i = 1; i <= daysInMonth; i++)
+				list.Add(i);
+			return list;
+		}
 
-			return month;
+		public int[,] GetMonthArray()
+		{
+			int[,] arr = new int[6, 7];
+			List<int> listOfDays = GetListOfDaysInMonth();
+			int i = 0;
+			for (int week = 0; week < 6; week++)
+			{
+				for (int days = 0; days < 7; days++, i++)
+				{
+					if (i < listOfDays.Count)
+						arr[week, days] = listOfDays[i];
+					else
+						arr[week, days] = 0;
+				}
+			}
+			return arr;
 		}
 		#endregion
 

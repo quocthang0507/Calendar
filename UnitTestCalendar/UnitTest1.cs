@@ -1,6 +1,4 @@
-﻿using System;
-using CalendarLib;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CalendarLib.Tests
 {
