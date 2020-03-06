@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarLib", "CalendarLib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCalendar", "UnitTestCalendar\UnitTestCalendar.csproj", "{1498B2E7-4328-49FD-9A11-3F997AD6E96E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarForm", "CalendarForm\CalendarForm.csproj", "{52A5C2FF-349C-4B5A-B7B3-A587E096F971}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1498B2E7-4328-49FD-9A11-3F997AD6E96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1498B2E7-4328-49FD-9A11-3F997AD6E96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1498B2E7-4328-49FD-9A11-3F997AD6E96E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A5C2FF-349C-4B5A-B7B3-A587E096F971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A5C2FF-349C-4B5A-B7B3-A587E096F971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A5C2FF-349C-4B5A-B7B3-A587E096F971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A5C2FF-349C-4B5A-B7B3-A587E096F971}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

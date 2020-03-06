@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Calendar")]
+[assembly: AssemblyProduct("CalendarForm")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("39868d1e-8e95-4bbd-a0df-a7d7cd7d584c")]
+[assembly: Guid("52a5c2ff-349c-4b5a-b7b3-a587e096f971")]
 
 // Version information for an assembly consists of the following four values:
 //
