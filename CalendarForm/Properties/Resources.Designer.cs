@@ -61,9 +61,19 @@ namespace CalendarForm.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 06-01-1946:Tổng tuyển cử bầu Quốc hội đầu tiên của nước Việt Nam dân chủ cộng hòa
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 06-01-1946:Tổng tuyển cử bầu Quốc hội đầu tiên của nước Việt Nam Dân chủ Cộng hòa
         ///07-01-1979:Chiến thắng biên giới Tây Nam chống quân xâm lược
-        ///&quot;09-01-1950:Ngày truyền thống học sinh, sinh viên Việt nam.&quot;
+        ///09-01-1950:Ngày truyền thống học sinh, sinh viên Việt nam
         ///13-01-1941:Khởi nghĩa Đô Lương
         ///11-01-2007:Việt Nam gia nhập WTO
         ///27-01-1973:Ký hiệp định Paris
@@ -71,11 +81,21 @@ namespace CalendarForm.Properties {
         ///08-02-1941:Lãnh tụ Hồ Chí Minh trở về nước trực tiếp lãnh đạo cách mạng Việt Nam
         ///27-02-1955:Ngày thầy thuốc Việt Nam
         ///14-02:Ngày lễ tình yêu
-        ///08-03-1910:Ngày Quốc [rest of string was truncated]&quot;;.
+        ///08-03-1910:Ngày Quốc tế [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string NgayLe {
             get {
                 return ResourceManager.GetString("NgayLe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open {
+            get {
+                object obj = ResourceManager.GetObject("open", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

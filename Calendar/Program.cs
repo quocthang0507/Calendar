@@ -42,5 +42,6 @@ namespace CalendarConsole
 				PrintMonthCalendar(i, DateTime.Now.Year);
 			}
 		}
+
 	}
 }
