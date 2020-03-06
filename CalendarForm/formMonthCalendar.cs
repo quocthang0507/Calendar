@@ -36,19 +36,18 @@ namespace CalendarForm
 			{
 				for (int j = 0; j < 7; j++)
 				{
+					string chuThich = "";
+					int ngay = arr[i, j];
 					Control control = tabCalendar.GetControlFromPosition(j, i + 1);
-					if (arr[i, j] == 0)
+					if (ngay == 0)
 						control.Text = "";
 					else
 					{
-						control.Text = arr[i, j].ToString();
-						string ngayLe = GetNgayLe(arr[i, j], month);
-						toolTip.SetToolTip(control, GetNgayLe(arr[i, j], month));
-						if (ngayLe != "")
-						{
-							control.Text += "*";
-						}
+						control.Text = ngay.ToString();
+						chuThich += Lunar.convertSolar2Lunar(ngay, month, year) + "\r\n";
+						chuThich += GetNgayLe(ngay, month);
 					}
+					toolTip.SetToolTip(control, chuThich);
 				}
 			}
 		}
